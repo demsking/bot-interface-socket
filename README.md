@@ -11,11 +11,11 @@ npm install --save bot-interface-socket
 ## Usage
 
 ```js
-const iConsole = require('bot-interface-socket')
+const iSocket = require('bot-interface-socket')
 const bot = require('./lib/your-ibot')
 
 bot.configure({
-    interface: iConsole
+    interface: iSocket
 })
 
 process.on('SIGINT', () => {
