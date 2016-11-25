@@ -1,7 +1,6 @@
 'use strict'
 
 const net = require('net')
-const colors = require('colors')
 
 const STR_CLOSE = '__CLOSE__'
 const SOCKET_TIMEOUT = 60 * 1000 * 10 // 10 min
@@ -21,7 +20,7 @@ const close_socket = (socket) => () => {
 }
 
 console.log(`Client should send ${STR_CLOSE} to close his connection`)
-console.log('Press Ctrl+C to exit\n'.italic)
+console.log('Press Ctrl+C to exit\n')
 
 const read = (socket, format) => new Promise((resolve, reject) => {
     if (!format) {
