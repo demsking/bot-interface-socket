@@ -1,6 +1,6 @@
 {
-  "name": "bot-interface-socket",
-  "version": "1.0.1",
+  "name": "ibot-interface-socket",
+  "version": "1.0.2",
   "description": "A socket interface for your bot",
   "main": "index.js",
   "scripts": {
@@ -9,21 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/demsking/bot-interface-socket.git"
+    "url": "git+https://github.com/demsking/ibot-interface-socket.git"
   },
   "keywords": [
     "bot",
+    "ibot",
     "interface",
     "socket"
   ],
   "author": "Sébastien Demanou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/demsking/bot-interface-socket/issues"
+    "url": "https://github.com/demsking/ibot-interface-socket/issues"
   },
-  "homepage": "https://github.com/demsking/bot-interface-socket#readme",
-  "devDependencies": {
-    "istanbul": "^0.4.5",
-    "mocha": "^3.2.0"
-  }
+  "homepage": "https://github.com/demsking/ibot-interface-socket#readme"
 }
