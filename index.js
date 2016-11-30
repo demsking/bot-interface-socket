@@ -78,14 +78,15 @@ const self = {
         
         resolve()
     }),
-    open: () => new Promise((resolve, reject) => {
+    open (start) => new Promise((resolve, reject) => {
         if (server) {
             return reject(new Error('The server is already open'))
         }
         
         server = net.createServer((socket) => {
             configure(socket)
-            resolve(socket)
+            resolve()
+            start(socket)
         }).on('error', (err) => {
             if (err.code === 'EADDRINUSE') {
                 console.log('Address in use, retrying...')
